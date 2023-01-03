@@ -1,32 +1,32 @@
+import {ProfileAccount, ProfileImg, ProfileDescription, Stats, StatsItem} from './Profile.styled'
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-        <div class="profile">
-  <div class="description">
-    <img
+        <ProfileAccount>
+  <ProfileDescription>
+    <ProfileImg
       src={avatar}
       alt={username}
-      class="avatar"
     />
     <p class="name">{username}</p>
                 <p class="tag">@{tag}</p>
                 <p class="location">{location}</p>
-  </div>
+  </ProfileDescription>
 
-  <ul class="stats">
-    <li>
+  <Stats>
+    <StatsItem>
       <span class="label">Followers</span>
                     <span class="quantity">{stats.followers}</span>
-    </li>
-    <li>
+    </StatsItem>
+    <StatsItem>
       <span class="label">Views</span>
       <span class="quantity">2000</span>
-    </li>
-    <li>
+    </StatsItem>
+    <StatsItem>
       <span class="label">Likes</span>
       <span class="quantity">3000</span>
-    </li>
-  </ul>
-    </div>
+    </StatsItem>
+  </Stats>
+    </ProfileAccount>
     )
 }
