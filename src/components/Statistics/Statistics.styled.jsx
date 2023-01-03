@@ -21,3 +21,12 @@ display: flex;
     flex-direction: column;
     align-items: center;
 `
+
+export const StatLabel = styled.span`
+    font-weight: 500;
+`
+
+export const StatPercentage = styled.span`
+font-weight: 700;
+font-size: 21px;
+`
