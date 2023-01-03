@@ -11,16 +11,22 @@ export const StatisticsUser = styled.section`
 export const StatList = styled.ul`
 list-style: none;
 display: flex;
-gap: 30px;
 padding: 0;
 margin: 0;
 `
 
 export const StatListItem = styled.li`
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    background-color: ${getRandomColor}
 `
+function getRandomColor() {
+     let hex = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    
+    return hex
+}
 
 export const StatLabel = styled.span`
     font-weight: 500;
