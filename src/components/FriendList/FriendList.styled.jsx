@@ -12,7 +12,7 @@ export const Friends = styled.ul`
 export const FriendsItem = styled.li`
 display: flex;
 gap: 10px;
-border: 1px solid black;
+border: 1px solid gray;
 padding: 10px 20px;
 align-items: center;
 border-radius: 10px;
