@@ -16,6 +16,7 @@ border: 1px solid black;
 padding: 10px 20px;
 align-items: center;
 border-radius: 10px;
+box-shadow: 10px 5px 5px gray;
 `
 export const FriendsItemStatus = styled.span`
 width: 10px;
