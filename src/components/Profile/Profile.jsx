@@ -1,4 +1,4 @@
-import {ProfileAccount, ProfileImg, ProfileDescription, Stats, StatsItem} from './Profile.styled'
+import {ProfileAccount, ProfileImg, ProfileDescription, Stats, StatsItem, StatsItemQuantity, StatsItemLabel, ProfileTag, ProfileLocation, ProfileUserName} from './Profile.styled'
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
@@ -8,23 +8,23 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       src={avatar}
       alt={username}
     />
-    <p class="name">{username}</p>
-                <p class="tag">@{tag}</p>
-                <p class="location">{location}</p>
+    <ProfileUserName>{username}</ProfileUserName>
+                <ProfileTag>@{tag}</ProfileTag>
+                <ProfileLocation>{location}</ProfileLocation>
   </ProfileDescription>
 
   <Stats>
     <StatsItem>
-      <span class="label">Followers</span>
-                    <span class="quantity">{stats.followers}</span>
+      <StatsItemLabel>Followers</StatsItemLabel>
+                    <StatsItemQuantity>{stats.followers}</StatsItemQuantity>
     </StatsItem>
     <StatsItem>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
+      <StatsItemLabel>Views</StatsItemLabel>
+                    <StatsItemQuantity>{stats.views}</StatsItemQuantity>
     </StatsItem>
     <StatsItem>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
+      <StatsItemLabel>Likes</StatsItemLabel>
+                    <StatsItemQuantity>{stats.likes}</StatsItemQuantity>
     </StatsItem>
   </Stats>
     </ProfileAccount>
