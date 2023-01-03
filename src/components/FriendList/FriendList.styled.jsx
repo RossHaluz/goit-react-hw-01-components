@@ -6,6 +6,7 @@ export const Friends = styled.ul`
     display: flex;
     gap: 20px;
     flex-direction: column;
+    margin-top: 35px;
 `
 
 export const FriendsItem = styled.li`
@@ -14,6 +15,7 @@ gap: 10px;
 border: 1px solid black;
 padding: 10px 20px;
 align-items: center;
+border-radius: 10px;
 `
 export const FriendsItemStatus = styled.span`
 width: 10px;
@@ -29,4 +31,16 @@ background-color: ${prop => {
     }
 }};
 border-radius: 50%;
+`
+
+export const Avatar = styled.img`
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: inherit;
+`
+
+export const Name = styled.p`
+font-size: 16px;
+font-weight: 600;
 `
